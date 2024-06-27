@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Painting Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .painting {
+      display: grid;
+      grid-template-rows: 414px 325px;
+      grid-template-columns: 320px 419px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .cell1 {
+      background-color: #E72F24;
+    }
+
+    .cell2 {
+      background-color: #F0F1EC; 
+    }
+
+
+    .cell3 {
+      display: grid;
+      background-color: #000;
+      grid-template-rows: 294px 1fr;
+      gap: 9px;
+    }
+
+    .cell3_a,
+    .cell3_b {
+      background-color: #F0F1EC;
+    }
+    
+
+    .cell4 {
+      display: grid;
+      background-color: #000; 
+      grid-template-rows: 130px 155px 22px;
+      grid-template-columns: 198px 153px 50px;
+      gap: 9px; 
+    }
+
+    .cell4_a {
+      background-color: #F0F1EC; 
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    .cell4_b {
+      background-color: #004592; 
+      border-bottom: 10px solid black;
+    }
+
+    .cell4_c {
+      display: grid;
+      background-color: #F0F1EC; 
+      grid-row: 2 / 4;
+    }
+
+    .cell4_d {
+      background-color: #F9D01E; 
+    }
+
+    .cell4_e {
+      background-color: #232629; 
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="painting">
+    <div class="cell1"></div>
+    <div class="cell2"></div>
+
+    <div class="cell3">
+      <div class="cell3_a"></div>
+      <div class="cell3_b"></div>
+    </div>
+
+    <div class="cell4">
+      <div class="cell4_a"></div>
+      <div class="cell4_b"></div>
+      <div class="cell4_c"></div>
+      <div class="cell4_d"></div>
+      <div class="cell4_e"></div>
+    </div>
+   </div>
+</body>
+
+</html>
